@@ -1,0 +1,205 @@
+/* body */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+/* header */
+
+header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.logo {
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.nav-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bottom a {
+    text-decoration: none;
+    display: inline-block;
+    color: #222222;
+    padding: 5px 0;
+} 
+
+p {
+    font-size: 12 px;
+}
+
+.burger-menu {
+    text-align: center;
+    color: white;
+    background-color: #03264C;
+    border-radius : 5px;
+    margin: 0 auto;
+    width: 20px;
+    height: 19px;
+    padding: 5px;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+}
+
+/* main */
+
+h2 {
+    font-size: 24px;
+}
+
+.articulos {
+    box-shadow: 0px 0px 0px rgb(100, 100, 100);
+}
+
+.articulos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.fas.fa-truck { 
+    color: green;
+    text-align: left;
+    width: 100%;
+    font-size: large;
+    margin: 15px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: green;
+}
+
+.hola {
+    font-size: 16px;
+    opacity: 0;
+}
+
+.hola:hover {
+    opacity: 1;
+}
+
+.main {
+    margin: auto;
+    width: 90%;
+}
+
+.articulos {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.img {
+    width: 100%;
+}
+
+/* footer*/
+
+.footer {
+    text-align: center;
+}
+
+.formas {
+    color: #03264C;
+    margin-bottom: 10px;
+    font-size: 2em;
+    transition: all .5s;
+}
+
+.formas:hover {
+    color: hotpink;
+}
+
+/* media queries */
+
+@media (max-width: 360px) {
+    .hola {
+        display: none;
+    }
+    .nav-bottom {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .logo {
+        width: 20%;
+    }
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .nav-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bottom ul {
+        display: flex;
+    }
+    .nav-bottom li {
+        margin: 5px;
+    }
+    .juntos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    p {
+        padding: 15px;
+    }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .articulos {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-top, .nav-bottom {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .nav-bottom li {
+        margin: 10px;
+        font-size: 20px;
+    }
+    .nav-top {
+        font-size: 25px;
+    }
+    .articulos {
+        width: 20%;
+        margin-bottom: 25px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer div {
+        text-align: center;
+    }
+}
