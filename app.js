@@ -17,6 +17,6 @@ app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/login.html"))
 });
 
-app.listen(3030, () =>
+app.listen(process.env.PORT || 3030, () =>
     console.log("Corriendo servidor")
 );
